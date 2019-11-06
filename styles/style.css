@@ -149,7 +149,7 @@ section{
     width:100%;
 }
 
-@media(max-width:800px){
+@media(max-width:1080px){
     .logo{
         width:100%;
         justify-content:space-around;
