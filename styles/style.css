@@ -150,9 +150,6 @@ section{
 }
 
 @media only screen and (max-width:360px){
-    body{
-        font-size:24pt;
-    }
 
     .logo{
         width:100%;
@@ -170,7 +167,7 @@ section{
     nav {
         justify-content:space-around;
         width:100%;
-        font-size:2em;
+        font-size:1.5em;
     }
     nav > ul{
         flex-direction: column;
@@ -179,15 +176,27 @@ section{
 
     #hero{
         width:100%;      
-        margin-top:680px;  
+        margin-top:266px;  
+        padding-left:5vw;
+        padding-right:5vw;
     }
 
     .anchor{
-        top:-680px;
+        top:-266px;
     }
 
     .card{
         display:none;
+    }
+
+    #google-link{
+        width:100%;
+        
+    }
+    
+    #amazon-link{
+        width:87%;
+        
     }
 }
 
