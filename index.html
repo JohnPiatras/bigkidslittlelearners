@@ -5,6 +5,8 @@
         <link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="styles/style.css">
         
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     </head>
     <body>        
         <header id="header">      
@@ -76,9 +78,11 @@
         </footer>
         <script>
         function getResolution() {
-            return "Your screen resolution is: " + window.screen.width * window.devicePixelRatio + "x" + window.screen.height * window.devicePixelRatio + "with a DPR of " + window.devicePixelRatio;
+
+            let str = "Reported Res: " + window.screen.width + "x" + window.screen.height + ", calculated: " + window.screen.width * window.devicePixelRatio + "x" + window.screen.height * window.devicePixelRatio + "with a DPR of " + window.devicePixelRatio;
+            document.getElementById("screen-debug").textContent = str;
         }
-        document.getElementById("screen-debug").textContent = getResolution();
+        getResolution();        
 
         </script>
 
