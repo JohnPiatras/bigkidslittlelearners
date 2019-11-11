@@ -24,6 +24,7 @@
                 <p>This phonic scheme has been created especially for 3-5 year olds to help explore sounds
                     through stories and songs.
                 </p>
+                <p id="screen-debug"></p>
                 <form id="form" action="https://www.freecodecamp.com/email-submit">
                     <input type="email" name="email" id="email" required placeholder="Enter your email address"/>
                     <input id="submit" type="submit" value="Learn More"/>
@@ -75,9 +76,10 @@
         </footer>
         <script>
         function getResolution() {
-            alert("Your screen resolution is: " + window.screen.width * window.devicePixelRatio + "x" + window.screen.height * window.devicePixelRatio + "with a DPR of " + window.devicePixelRatio);
+            return "Your screen resolution is: " + window.screen.width * window.devicePixelRatio + "x" + window.screen.height * window.devicePixelRatio + "with a DPR of " + window.devicePixelRatio;
         }
-        getResolution();
+        document.getElementById("screen-debug").textContent = getResolution();
+
         </script>
 
     </body>
