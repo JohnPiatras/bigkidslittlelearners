@@ -149,7 +149,7 @@ section{
     width:100%;
 }
 
-@media(max-width:1080px){
+@media only screen and (max-width:1080px){
     body{
         font-size:24pt;
     }
