@@ -131,9 +131,7 @@ section{
     width:100%;
 }
 
-#video{
-    
-}
+
 
 #google-link{
     width:256px;
@@ -147,6 +145,10 @@ section{
 
 #buy a img{
     width:100%;
+}
+
+#video{
+    box-shadow:1px 3px 6px 3px gray;
 }
 
 @media only screen and (max-width:360px){
@@ -197,6 +199,11 @@ section{
     #amazon-link{
         width:87%;
         
+    }
+
+    #video{
+        width:95%;
+        height:315px;
     }
 }
 
